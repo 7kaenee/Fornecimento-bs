@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BS Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cabeçalho com o logo -->
+  <header>
+    <img src="assets/bs_server_logo_copiar.png" alt="BS SERVER Logo" class="logo">
+  </header>
+
+  <!-- Formulário -->
+  <main>
+    <form action="https://fornecimentos-bs.onrender.com/submit" method="POST" enctype="multipart/form-data">
+      <label for="fornecimento">Digite o que você quer fornecer:</label>
+      <textarea id="fornecimento" name="fornecimento" placeholder="Digite o que você quer fornecer..." required></textarea><br><br>
+
+      <label for="usuario">Qual seu nome/@ de usuário no Discord?</label>
+      <input type="text" id="usuario" name="usuario" placeholder="Ex: @seuNome#1234" required><br><br>
+
+      <label for="imagem">Mande foto/print do que você irá nos fornecer:</label>
+      <input type="file" id="imagem" name="imagem" accept="image/*"><br><br>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 BS Store. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
